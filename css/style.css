@@ -26,41 +26,26 @@
 */
 
 body {
-    /* Typography Declarations */
-    color: #222222;
-    font-size: 1em;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    margin-left: .7rem;
+}
+
+ul {
+    margin-top: .9rem;
 }
 
 a {
+    color: white;
     text-decoration: none;
-    color: #F1AD06;
-    font-weight: bold;
 }
 
 a:hover {
-    /*Typography Declarations*/
-    color: #741938;
-}
-
-.masthead-heading,
-.masthead-intro,
-.mastfoot {
-    text-align: center;
-}
-
-h1 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-h2 {
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-weight: bold;
-    color: #40234C;
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    color: #edd9c0;
 }
 
 
@@ -68,28 +53,34 @@ h2 {
 (all the styles inside the < header > or < nav > tags)
 */
 
-.masthead {
-    padding: 6em 0;
-    background-image: url('http://i.imgur.com/crez3Gf.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    color: #black;
-    border-top: solid .1em #E9A2F2;
+header {
+    position: relative;
+    z-index: 99;
+    background: #a8b6bf;
+    padding: 16px 0 20px 0;
+    border-bottom: 1px solid #eaeaea;
+    height: 5rem;
+    color: white;
 }
 
-.masthead-intro {
-    margin-bottom: 0.1em;
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 2em;
+.content {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
 }
 
-.masthead-heading {
-    margin-top: 0.2em;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: bold;
-    font-size: 6em;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
+.content h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    float: left;
+    font-size: 2rem;
+    margin-top: .5rem;
+    font-weight: 200;
+}
+
+.nav {
+    float: right;
+    font-family: 'Playfair Display', serif;
 }
 
 
@@ -97,70 +88,12 @@ h2 {
 (all the styles inside the < sections > or < aside > tags)
 */
 
-.introduction,
-.wherefrom,
-.aboutme {
-    max-width: 30em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-}
-
-.introduction > p,
-.wherefrom > p,
-.aboutme > p {
-    /*Typography Declarations*/
-    font-weight: 300;
-    letter-spacing: 0.05em;
-}
-
 
 /* Footer styles
 (all the styles inside the < footer > tag)
 */
 
-.mastfoot {
-    background-color: #247471;
-    margin-top: 3em;
-    padding-top: 4em;
-    padding-bottom: 4em;
-    color: white;
-}
-
-.social {
-    padding: 0;
-    list-style: none;
-    margin-top: 1.2em;
-    margin-bottom: 1.2em;
-}
-
-.social > li {
-    display: inline-block;
-    text-shadow: .5px .5px .5px #000;
-}
-
 
 /* Responsive styles
 (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
 */
-
-@media only screen and (max-width: 500px) {
-    .masthead {
-        padding: 3em 0;
-    }
-    .masthead-heading {
-        font-size: 3em;
-    }
-    .introduction,
-    .wherefrom,
-    .aboutme {
-        max-width: 20rem;
-        font-size: 0.9rem;
-    }
-    h1 {
-        font-size: 1.5rem;
-    }
-    h2 {
-        font-size: 1.2rem;
-    }
-}
