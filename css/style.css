@@ -63,6 +63,12 @@ img {
     height: 7rem;
 }
 
+h4 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    font-weight: 100;
+}
+
 
 /* Header styles
 (all the styles inside the < header > or < nav > tags)
@@ -114,7 +120,13 @@ header {
 }
 
 .secondary {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
+    text-align: center;
+}
+
+.secondary-blog {
+    font-size: 1.0rem;
+    text-align: center;
 }
 
 .content {
@@ -174,6 +186,53 @@ footer {
     color: black;
     text-align: center;
     padding-top: 2rem;
+}
+
+
+/*Blog Styles*/
+
+.blog-head {
+    position: relative;
+    text-align: center;
+    background: #b56969;
+    padding: 16px 0 20px 0;
+    height: 12rem;
+    color: white;
+    font-size: 3rem;
+    width: 100%;
+}
+
+.blog-content {
+    position: relative;
+    text-align: center;
+    background: white;
+    padding: 16px 0 20px 0;
+    height: 45rem;
+    color: black;
+    font-size: 3rem;
+    width: 100%;
+}
+
+.project {
+    height: 20rem;
+    width: 80%;
+    margin-bottom: 2rem;
+    margin: 2rem auto;
+    display: block;
+}
+
+.project p {
+    font-size: .9rem;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.project img {
+    margin-top: 2rem;
+    height: 10rem;
+    width: 15rem;
+    border: 1px solid black;
 }
 
 
