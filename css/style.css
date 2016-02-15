@@ -205,13 +205,13 @@ header {
 
 .companies ul {
     list-style-type: none;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
 .companies li {
-    height: 12rem;
-    width: 12rem;
+    height: 10rem;
+    width: 10rem;
     display: inline-block;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -366,7 +366,18 @@ footer {
 
 @media only screen and (max-width: 870px) {
     .skills img {
-        height: 12rem;
+        height: 10rem;
+    }
+    .companies img {
+        height: 6rem;
+        padding-top: 1rem;
+    }
+    .companies p {
+        font-size: .8rem;
+    }
+    .companies li {
+        height: 6rem;
+        width: 6rem;
     }
 }
 
@@ -375,7 +386,7 @@ footer {
         height: 10rem;
     }
     .companies img {
-        height: 8rem;
+        height: 7rem;
         padding-top: 1rem;
     }
     .companies p {
