@@ -50,9 +50,9 @@ a:hover {
 
 h3 {
     font: 'Playfair Display', serif;
-    font-size: 3rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 p {
@@ -64,7 +64,7 @@ img {
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 1.3rem;
     margin-bottom: .5rem;
     font-weight: 100;
 }
@@ -76,7 +76,7 @@ h4 {
 
 header {
     position: relative;
-    z-index: 99;
+    z-index: 90;
     background: #e8edf3;
     padding: 16px 0 20px 0;
     border-bottom: 1px solid #eaeaea;
@@ -110,18 +110,17 @@ header {
 */
 
 .first {
-    position: relative;
     background: #b56969;
-    margin-bottom: 1rem;
     height: 100%;
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     width: 100%;
 }
 
 .secondary {
-    font-size: 2.0rem;
+    font-size: 1.2rem;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .tertiary {
@@ -131,9 +130,9 @@ header {
 }
 
 .quote {
-    background: white;
+    background: #a8b6bf;
     height: 100%;
-    color: black;
+    color: white;
     font-size: 4rem;
     font-weight: 700;
     width: 100%;
@@ -146,6 +145,7 @@ header {
     width: 90%;
     padding-top: 1.2rem;
     margin: 0 auto;
+    font-weight: 900;
     margin-bottom: .5rem;
     font-family: 'Playfair Display', serif;
 }
@@ -171,20 +171,42 @@ header {
     padding-bottom: .2rem;
 }
 
+.skills {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: white;
+    padding-top: 1rem;
+}
+
+.skills img {
+    padding-top: 3rem;
+    height: 15rem;
+    padding-bottom: 3rem;
+}
+
 .second {
-    background: #e6cf8b;
+    background: white;
     height: 100%;
     font-size: 3rem;
     width: 100%;
     color: black;
+    padding-bottom: 2rem;
 }
 
 .second p {
-    font-size: 2rem;
+    font-size: 25rem;
+}
+
+.second img {
+    padding-bottom: .5rem;
 }
 
 .companies ul {
     list-style-type: none;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .companies li {
@@ -195,7 +217,7 @@ header {
     margin-right: 1rem;
     margin-top: 2rem;
     font-size: 1rem;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 
 .companies p {
@@ -223,48 +245,59 @@ footer {
 
 /*Portfolio Styles*/
 
-.portfolio-head {
-    position: relative;
-    text-align: center;
-    background: #b56969;
-    padding: 16px 0 20px 0;
-    height: 12rem;
-    color: white;
-    font-size: 3rem;
-    width: 100%;
-}
-
 .portfolio-content {
-    position: relative;
-    text-align: center;
-    background: white;
-    padding: 16px 0 20px 0;
-    height: 45rem;
+    background: #e6cf8b;
+    height: 100%;
+    padding-bottom: 2rem;
     color: black;
     font-size: 3rem;
     width: 100%;
+    text-align: center;
 }
 
 .project {
-    height: 20rem;
+    height: 100%;
     width: 80%;
-    margin-bottom: 2rem;
-    margin: 2rem auto;
-    display: block;
+    margin: 0 auto 0 auto;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+}
+
+.project h3 {
+    padding-bottom: 2rem;
+    color: #7d4627;
 }
 
 .project p {
     font-size: .9rem;
-    text-align: center;
-    width: 50%;
+    text-align: left;
+    width: 40%;
     margin: 0 auto;
+    color: #7d4627;
+}
+
+.project a {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    color: #7d4627;
+}
+
+.project a:hover {
+    color: #b56969;
+    text-decoration: underline;
 }
 
 .project img {
-    margin-top: 2rem;
-    height: 10rem;
-    width: 15rem;
+    margin-top: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 15rem;
     border: 1px solid black;
+}
+
+.customHr {
+    height: .2rem;
+    z-index: 99;
 }
 
 
@@ -287,7 +320,123 @@ footer {
     margin-top: 10rem;
 }
 
-.blog-first
+.contact {
+    background: white;
+    height: 100%;
+    font-size: 3rem;
+    width: 100%;
+    color: #b56969;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.contact p {
+    border: 2px solid #b56969;
+    width: 15%;
+    color: #b56969;
+    margin: 0 auto;
+    font-size: 2rem;
+    display: inline;
+    margin-right: .8rem;
+    padding-right: .8rem;
+    padding-left: .8rem;
+}
+
+.contact p:hover {
+    background: #a8b6bf;
+}
+
+.contact a {
+    color: #b56969;
+}
+
+.contact h3 {
+    color: black;
+    padding-top: 1rem;
+}
+
+
 /* Responsive styles
 (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
 */
+
+
+/*ipad potrait*/
+
+@media only screen and (max-width: 870px) {
+    .skills img {
+        height: 12rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .skills img {
+        height: 10rem;
+    }
+    .companies img {
+        height: 8rem;
+        padding-top: 1rem;
+    }
+    .companies p {
+        font-size: .8rem;
+    }
+    .companies li {
+        height: 6rem;
+        width: 6rem;
+    }
+    .contact p {
+        font-size: 1rem;
+    }
+    .content h2 {
+        font-family: 'Josefin Sans', sans-serif;
+        float: none;
+        font-size: 1.2rem;
+        margin-top: .5rem;
+        font-weight: 200;
+    }
+    .nav {
+        float: none;
+        padding-bottom: 2rem;
+    }
+    .nav li {
+        font-size: .7rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    .secondary {
+        font-size: .8rem;
+    }
+    .project a {
+        font-size: 1.1rem;
+    }
+    .project p {
+        width: 70%;
+    }
+}
+
+
+/*iPhone landscape*/
+
+@media only screen and (max-width: 480px) {
+    .companies img {
+        height: 5rem;
+        padding-top: 1rem;
+    }
+    .companies p {
+        font-size: .8rem;
+    }
+    .companies li {
+        height: 6rem;
+        width: 6rem;
+    }
+    .contact p {
+        font-size: .7rem;
+    }
+}
+
+
+/*iPhone portrait*/
+
+@media only screen and (max-width: 320px) {}

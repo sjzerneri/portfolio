@@ -23,16 +23,18 @@ Mobile Safari introduced the "viewport meta tag" to let web developers control t
 
 <body>
 
-    <header>
-        <div class="content">
+    <header id="top">
+        <div class="content" name="content">
             <div class="logo">
-                <h2> <a href="index.html">Steve Zerneri</a></h2>
+                <h2> <a href="#top">Steve Zerneri</a></h2>
             </div>
             <div class="nav">
                 <ul>
-                    <li><a href="index.html">Main</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#career">Career</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <li><a href="blog.html">Blog</a></li> !-->
                 </ul>
             </div>
         </div>
@@ -40,63 +42,84 @@ Mobile Safari introduced the "viewport meta tag" to let web developers control t
     <section class="first">
         <div class="content">
             <h3> Hi, I'm Steve. </h3>
-            <p class="secondary">I help companies acquire customers quickly.</p>
-            <p class="tertiary"> I'm also an aspiring front end web developer.</p>
-        </div>
-        <div class="quote">
-            <p class="first-quote">We are what we repeatedly do. Excellence, then, is not an act, but a habit.</p>
+            <p class="secondary"> I'm an aspiring front end web developer.</p>
         </div>
     </section>
 
-    <section class="second">
-        <div class="content">
-            <h3> Skills </h3>
-            <p> Past Full Time</p>
-            <div class="companies">
-                <ul>
-                    <li>
-                        <p>Founder and COO</p>
-                        <img src="images/lugg-logo.png">
-                        <p>Lugg</p>
-                    </li>
-                    <li>
-                        <p>Sr.Ops Manager</p>
-                        <img src="images/uber-logo.png">
-                        <p>Uber</p>
-                    </li>
-                    <li>
-                        <p>Growth Hacker</p>
-                        <img src="images/inmarket-logo.png">
-                        <p>inMarket</p>
-                    </li>
-                    <li>
-                        <p>Sr.Financial Analyst</p>
-                        <img src="images/raytheon-logo.png">
-                        <p>Raytheon</p>
-                    </li>
-                </ul>
-            </div>
-            <p> Past Contracting/Short Term</p>
-            <div class="companies">
-                <ul>
-                    <li>
-                        <p>Operations</p>
-                        <img src="images/gobutler-logo.png">
-                        <p>GoButler</p>
-                    </li>
-                    <li>
-                        <p>Operations</p>
-                        <img src="images/twenty20-logo.png">
-                        <p>Twenty20</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    <section class="skills">
+        <h3> Skills </h3>
+        <img src="images/skills.png" </section>
 
-    <footer>
-        <p> Copyright 2016 Steve Zerneri</p>
-    </footer>
+        <section class="second" id="career">
+            <div class="content">
+                <h3> Career Highlights </h3>
+                <div class="companies">
+                    <ul>
+                        <li>
+                            <a href="http://lugg.com"><img src="images/lugg-logo.png"></a>
+                            <p>Founder,Lugg</p>
+                        </li>
+                        <li>
+                            <a href="http://uber.com"><img src="images/uber-logo.png"></a>
+                            <p>Sr.Ops,Uber</p>
+                        </li>
+                        <li>
+                            <a href="http://inmarket.com"><img src="images/inmarket-logo.png"></a>
+                            <p>Growth,inMarket</p>
+                        </li>
+                        <li>
+                            <a href="http://raytheon.com"><img src="images/raytheon-logo.png"></a>
+                            <p>Analyst,Raytheon</p>
+                        </li>
+                        <li>
+                            <a href="http://gobutlernow.com"><img src="images/gobutler-logo.png"></a>
+                            <p>Ops,GoButler</p>
+                        </li>
+                        <li>
+                            <a href="http://twenty20.com"><img src="images/twenty20-logo.png"></a>
+                            <p>Ops,Twenty20</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="portfolio-content" id="portfolio">
+            <div class="project">
+                <h3>Portfolio </h3>
+                <a href="http://sjzerneri.github.io/dmeAPI/">DME Stats - An API Hack</a>
+                <p> This is an API hack where I take medicare data and allow a user to search dynamically for medical suppiers in their area.</p>
+                <a href="http://sjzerneri.github.io/dmeAPI/" target="_blank"><img class="proj" src="images/DME-stats.png"></a>
+            </div>
+            <div class="project">
+                <a href="http://sjzerneri.github.io/shopping-list">Shopping List App</a>
+                <p> A Shopping List App which let's you manage a virtual shopping cart.</p>
+                <a href="http://sjzerneri.github.io/shopping-list" target="_blank"><img class="proj" src="images/shopping-list.png"></a>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h3>Get In Touch</h3>
+            <p>
+                <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">Email Me</a>
+            </p>
+            <p>
+                <a href="http://www.linkedin.com/in/stevenzerneri" target="_top">Linked In</a>
+            </p>
+            <p>
+                <a href="http://twitter.com/stuave" target="_top">Twitter</a>
+            </p>
+            <p>
+                <a href="https://angel.co/steven-zerneri" target="_top">Angelist</a>
+            </p>
+        </section>
+
+        <!-- add in contact me section !-->
+
+        <footer>
+            <p> Copyright 2016 Steve Zerneri</p>
+        </footer>
 
 </body>
 
